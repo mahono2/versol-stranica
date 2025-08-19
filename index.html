@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VERSOL – Vertical Solutions</title>
   <meta name="description" content="Vertical Solutions (VERSOL) – Konsultacije i podrška za PANTHEON ERP. Osnovani 2014. sa misijom stvaranja zdravih procesa.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="theme-color" content="#f28c28">
+  <meta property="og:title" content="VERSOL – Vertical Solutions">
+  <meta property="og:description" content="PANTHEON konsultacije, implementacija i podrška. Zdravi procesi od 2014.">
+  <meta property="og:type" content="website">
   <style>
     :root {
       --accent: #f28c28;
@@ -20,6 +25,8 @@
       background: var(--bg);
       line-height: 1.6;
     }
+    html { scroll-behavior: smooth; }
+    section { scroll-margin-top: 80px; }
     header {
       padding: 20px 40px;
       border-bottom: 1px solid #eee;
@@ -27,18 +34,14 @@
       align-items: center;
       justify-content: space-between;
     }
-    header img {
-      height: 60px;
-    }
+    header img { height: 60px; }
     nav a {
       margin-left: 20px;
       text-decoration: none;
       color: var(--dark);
       font-weight: 500;
     }
-    nav a:hover {
-      color: var(--accent);
-    }
+    nav a:hover { color: var(--accent); }
     .hero {
       padding: 100px 20px;
       text-align: center;
@@ -95,17 +98,9 @@
       text-align: center;
       transition: box-shadow 0.2s;
     }
-    .card:hover {
-      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-    }
-    .card h3 {
-      margin-bottom: 12px;
-      color: var(--dark);
-    }
-    .contact {
-      text-align: center;
-      font-size: 18px;
-    }
+    .card:hover { box-shadow: 0 6px 16px rgba(0,0,0,0.1); }
+    .card h3 { margin-bottom: 12px; color: var(--dark); }
+    .contact { text-align: center; font-size: 18px; }
     footer {
       background: #f7f7f7;
       padding: 20px;
@@ -123,6 +118,7 @@
     <a href="#o-nama">O nama</a>
     <a href="#usluge">Usluge</a>
     <a href="#kontakt">Kontakt</a>
+    <a href="#ticket">Ticket</a>
   </nav>
 </header>
 
@@ -157,7 +153,7 @@
       <p>Analiza procesa i plan implementacije PANTHEON sistema prilagođenog vašem poslovanju. </p>
     </div>
     <div class="card">
-      <h3>Vertikalna riješenja</h3>
+      <h3>Vertikalna rješenja</h3>
       <p>Usklađivanje ERP-a s vašim operativnim modelom i vertikalna rješenja po mjeri.</p>
     </div>
     <div class="card">
@@ -179,21 +175,24 @@
     <p>Osnovani: 2014</p>
   </div>
 </section>
-  <section id="ticket">
+
+<section id="ticket">
   <h2>Prijava ticketa</h2>
   <div class="contact">
-    <!-- FIX: dodan &embed=true i povećana visina -->
-    <iframe width="100%" height="720"
+    <iframe
+      width="100%"
+      height="720"
       src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=tacUoQcKIkaK-vPf20l6TJ4lxS34VDNKgWbyWTKoPfxUNlI5WlZIQ1o4VTZQSzk5WE9PUVNUS1MxTi4u&embed=true"
       style="border:none;max-width:100%;max-height:100vh"
-      allowfullscreen loading="lazy"></iframe>
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
     <p style="margin-top:10px">
       Ako se forma ne učita, otvorite je ovdje:
       <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=tacUoQcKIkaK-vPf20l6TJ4lxS34VDNKgWbyWTKoPfxUNlI5WlZIQ1o4VTZQSzk5WE9PUVNUS1MxTi4u" target="_blank" rel="noopener">Otvori u novom tabu</a>
     </p>
   </div>
 </section>
-
 
 <footer>
   © 2014–2025 Vertical Solutions (VERSOL). Sva prava zadržana.
