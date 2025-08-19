@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vertical Solutions (VERSOL) — PANTHEON konsultacije i podrška</title>
+  <meta name="description" content="VERSOL — Vertical Solutions. Konsultacije i podrška za PANTHEON. Zdravi procesi od 2014." />
+  <meta name="theme-color" content="#f28c28" />
+  <meta property="og:title" content="Vertical Solutions (VERSOL) — PANTHEON konsultacije i podrška" />
+  <meta property="og:description" content="Zdravi procesi. PANTHEON po mjeri. Osnovani 2014." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="VERSOL" />
+  <style>
+    :root{
+      --accent:#f28c28; /* narančasta */
+      --ink:#3f3f3f;   /* tamno siva */
+      --muted:#6a6a6a;
+      --bg:#0f0f10;
+      --card:#151517;
+      --ring: rgba(242,140,40,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      color:#e9e9ea; background: radial-gradient(1200px 800px at 10% -10%, rgba(242,140,40,.12), transparent 60%),
+                 radial-gradient(1000px 700px at 100% 20%, rgba(242,140,40,.10), transparent 60%),
+                 linear-gradient(180deg, #0b0b0c, #0f0f10);
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{opacity:.9}
+
+    /* Layout */
+    .wrap{max-width:1100px; margin:0 auto; padding:32px 20px}
+
+    header{position:relative; padding:28px 0 8px;}
+    .brand{display:flex; align-items:center; gap:18px}
+    .logo-box{width:56px;height:56px;border-radius:16px;background:var(--accent);display:grid;place-items:center; box-shadow:0 8px 28px rgba(242,140,40,.25)}
+    .logo-box span{font-weight:900;color:#2f2f2f;letter-spacing:.5px}
+    .title{display:flex;flex-direction:column}
+    .title h1{margin:0;font-size:clamp(22px,3vw,28px);letter-spacing:.5px}
+    .subtitle{margin:2px 0 0;font-size:14px;color:#c9c9ca}
+
+    .hero{position:relative; overflow:hidden; border:1px solid rgba(255,255,255,.06); background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      padding:48px; border-radius:32px; box-shadow:0 10px 40px rgba(0,0,0,.25)}
+    .hero h2{margin:0 0 10px; font-size:clamp(28px,5vw,44px); line-height:1.1}
+    .hero p{margin:0 0 24px; color:#d6d6d7}
+    .cta{display:flex; gap:14px; flex-wrap:wrap}
+    .btn{appearance:none;border:none;cursor:pointer; padding:13px 18px; border-radius:14px; font-weight:600}
+    .btn-primary{background:var(--accent); color:#242424; box-shadow:0 12px 30px var(--ring)}
+    .btn-outline{background:transparent; color:#e9e9ea; border:1px solid rgba(255,255,255,.14)}
+
+    /* Abstract ornaments */
+    .orb, .blob{
+      position:absolute; filter:blur(30px); opacity:.35; pointer-events:none
+    }
+    .orb{width:220px;height:220px;border-radius:50%; background:conic-gradient(from 0deg, rgba(242,140,40,.45), transparent 60%)}
+    .orb.one{top:-40px; right:-40px}
+    .blob{width:380px;height:380px;background:radial-gradient(circle at 30% 30%, rgba(242,140,40,.35), transparent 60%)}
+    .blob.one{bottom:-120px; left:-60px}
+
+    section{margin:56px 0 0}
+    .grid{display:grid; gap:18px; grid-template-columns:repeat(auto-fit, minmax(240px,1fr))}
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:20px; padding:22px}
+    .card h3{margin:0 0 6px; font-size:18px}
+    .muted{color:#b6b6b7}
+
+    .about{display:grid; gap:20px; grid-template-columns:1.2fr .8fr; align-items:center}
+    .about .info{padding:18px 22px; border-left:3px solid var(--accent); background:linear-gradient(180deg, rgba(242,140,40,.08), transparent); border-radius:14px}
+
+    .contact{
+      display:flex; align-items:center; gap:18px; flex-wrap:wrap; background:linear-gradient(180deg, rgba(242,140,40,.10), rgba(242,140,40,.06));
+      border:1px solid rgba(255,255,255,.08); padding:24px; border-radius:20px
+    }
+    .tag{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; background:rgba(242,140,40,.12); color:#ffd7b0; font-weight:600; letter-spacing:.3px}
+    .small{font-size:14px}
+
+    footer{margin:48px 0 24px; color:#9c9c9d; font-size:14px}
+
+    @media (max-width: 760px){
+      .hero{padding:28px}
+      .about{grid-template-columns:1fr}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Vertical Solutions",
+    "alternateName": "VERSOL",
+    "url": "https://podrska.verol.ba/",
+    "email": "podrska@versol.ba",
+    "foundingDate": "2014",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo-box"><span>VS</span></div>
+        <div class="title">
+          <h1>Vertical Solutions <span class="muted">(VERSOL)</span></h1>
+          <div class="subtitle">PANTHEON konsultacije i podrška — od 2014.</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div class="orb one" aria-hidden="true"></div>
+        <div class="blob one" aria-hidden="true"></div>
+        <h2><span style="color:var(--accent)">Zdravi procesi.</span> PANTHEON po mjeri vašeg biznisa.</h2>
+        <p>Osnovani 2014. s misijom usklađivanja PANTHEON-a s realnim procesima korisnika, uključujući sve vertikalne solucije. Tim od dvije osobe, fokus na jasnoći i brzom rezultatu.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="mailto:podrska@versol.ba?subject=Upit%20—%20VERSOL&body=Pozdrav%2C%20zanima%20nas%20konsultacija%20za%20PANTHEON...">Pošalji upit</a>
+          <a class="btn btn-outline" href="#kontakt">Kontakt detalji</a>
+        </div>
+      </section>
+
+      <section class="about" id="o-nama">
+        <div class="info">
+          <h3>O nama</h3>
+          <p>VERTICAL SOLUTIONS (skraćeno <strong>VERSOL</strong>) — specijalizirani za PANTHEON konsultacije, podešavanje procesa, podršku i edukacije. Naš kompas: <em>zdravi procesi</em>.</p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <h3>Konsultacije</h3>
+            <p class="muted">Analiza procesa, mapiranje tokova, preporuke i plan implementacije.</p>
+          </div>
+          <div class="card">
+            <h3>Implementacija</h3>
+            <p class="muted">Usklađivanje PANTHEON-a s vašim operativnim modelom. Vertikalne solucije po mjeri.</p>
+          </div>
+          <div class="card">
+            <h3>Podrška i održavanje</h3>
+            <p class="muted">Brza pomoć, otklanjanje zastoja, smanjenje grešaka u radu.</p>
+          </div>
+          <div class="card">
+            <h3>Automatizacije & izvještaji</h3>
+            <p class="muted">SQL izvještaji, workflow optimizacije i integracije.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" style="margin-top:40px">
+        <div class="contact">
+          <span class="tag">Kontakt</span>
+          <div>
+            <div class="small">Email</div>
+            <a href="mailto:podrska@versol.ba">podrska@versol.ba</a>
+          </div>
+          <div>
+            <div class="small">Naziv</div>
+            <div>Vertical Solutions — VERSOL</div>
+          </div>
+          <div>
+            <div class="small">Osnivanje</div>
+            <div>2014</div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        © 2014–2025 VERSOL — Vertical Solutions. Sva prava zadržana.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
