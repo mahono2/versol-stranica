@@ -236,10 +236,17 @@
   $(function () {
     $("#isl-connectbox").ISLOnlineJoin({
       serverUrl: "https://www.islonline.net",
-      languageCode: "hr" // može i "hr" ako želiš, ili izbaci pa će auto
-      // minimal: true,     // kompaktniji UI (po želji)
-      // showWarning: false // sakrij upozorenje (po želji)
+      languageCode: "hr" // ili "en"
     });
+
+    // Skini autofokus koji ConnectBox postavi
+    setTimeout(function () {
+      if ($("#isl-connectbox").find(":focus").length) {
+        $("#isl-connectbox :focus").blur(); // makni kursor iz polja
+      }
+      // (po želji) prebaci fokus na neki drugi element:
+      // document.querySelector("header a")?.focus();
+    }, 100);
   });
 </script>
   
