@@ -197,9 +197,16 @@
   <section id="rds">
   <h2>Podrška na daljinu</h2>
   <div class="contact">
-    <a href="https://www.islonline.com/join/" target="_blank" rel="noopener">
-  Unesi kod i pridruži se
-</a>
+    <!-- Ovdje će se pojaviti ConnectBox -->
+    <div id="isl-connectbox"></div>
+
+    <noscript>
+      <p>Za priključenje, otvorite
+        <a href="https://www.islonline.com/join/" target="_blank" rel="noopener">ovdje</a>.
+      </p>
+    </noscript>
+  </div>
+</section>
 
 <section id="ticket">
   <h2>Zahtjev za podršku</h2>
@@ -225,5 +232,16 @@
   © 2015–2025 Vertical Solutions (VERSOL). Sva prava zadržana.
 </footer>
 
+<script>
+  $(function () {
+    $("#isl-connectbox").ISLOnlineJoin({
+      serverUrl: "https://www.islonline.net",
+      languageCode: "hr" // može i "hr" ako želiš, ili izbaci pa će auto
+      // minimal: true,     // kompaktniji UI (po želji)
+      // showWarning: false // sakrij upozorenje (po želji)
+    });
+  });
+</script>
+  
 </body>
 </html>
